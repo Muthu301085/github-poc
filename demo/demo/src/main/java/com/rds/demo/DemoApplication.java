@@ -12,6 +12,7 @@ public class DemoApplication {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 
+	// RDS API call
 	public Object callRDSApi(Order order) {
 
 		try {
