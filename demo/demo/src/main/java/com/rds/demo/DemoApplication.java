@@ -28,12 +28,6 @@ public class DemoApplication {
 			return iFastGnOrderResponse;
 		} catch (Exception e) {
 			log.error("Exception occured while calling IFast : " + e.getMessage());
-			throw new KeaRuntimeException(Optional.of(e)
-					.map(InvestorApiErrors::investorErrorResponseOf)
-					.map(HttpEntity::getBody)
-					.map(ErrorMessage::getErrorCode)
-					.map(ErrorCode::getCode)
-					.orElse(UNKNOWN_ERROR.getCode().getCode()));
 		}
 	}
 }
