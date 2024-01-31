@@ -31,4 +31,9 @@ public class DemoApplication {
 			log.error("Exception occured while calling IFast : " + e.getMessage());
 		}
 	}
+
+	//Print RDS call
+	Public void printRDSApi() {
+		System.out.println("Hello World!");
+	}
 }
